@@ -1,0 +1,92 @@
+body {
+  background-color: black;
+  color: white;
+
+  text-align: center;
+  align-content: center;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+
+  font-family: "Roboto Slab";
+}
+
+h1 span {
+  color: aquamarine;
+}
+
+p {
+  font-size: 1.25rem;
+  margin-bottom: 4.5rem;
+}
+
+ul {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+a {
+  color: aquamarine;
+  text-decoration: none;
+}
+
+ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 16px 24px;
+
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0.5rem;
+
+  font-size: 1.5rem;
+  
+  transition: background-color 300ms;
+}
+
+#bg-image {
+  background-image: url("https://images.pexels.com/photos/24859620/pexels-photo-24859620/free-photo-of-3d-printer-in-a-workshop.jpeg");
+
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  opacity: 0.2;
+
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+@media (width <40rem) {
+  html {
+    font-size: 70%;
+  }
+}
+
+h1,
+p,
+a {
+  animation: appear 1s backwards;
+}
+
+h1 {
+  animation-delay: 0.8s;
+}
+
+a {
+  animation-delay: 1.6s;
+}
+
+@keyframes apper {
+  0% {
+    opacity: 0;
+  }
+}
